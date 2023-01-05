@@ -1,1 +1,1 @@
-<app-person-form></app-person-form>
+<app-person-form (newItemEvent)="newUser()"></app-person-form><app-overview [newUserAdded]="notifyChild"></app-overview>

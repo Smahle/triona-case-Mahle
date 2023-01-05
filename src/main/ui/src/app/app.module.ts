@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { OverviewModule } from './overview/overview/overview.module';
 import { PersonFormModule } from './person-form/person-form.module';
 
 @NgModule({
@@ -14,6 +15,7 @@ import { PersonFormModule } from './person-form/person-form.module';
     BrowserModule,
     AppRoutingModule,
     PersonFormModule,
+    OverviewModule,
     HttpClientModule
   ],
   providers: [],
