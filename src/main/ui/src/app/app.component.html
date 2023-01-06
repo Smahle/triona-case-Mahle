@@ -1,1 +1,11 @@
-<router-outlet></router-outlet>
+<div class="container">
+  <mat-drawer-container class="drawer-container">
+    <mat-drawer class="nav" mode="side" opened>
+      <button routerLink="brukere">Oversikt over brukere</button>
+      <button routerLink="registrering">Oversikt over brukere</button>
+    </mat-drawer>
+    <mat-drawer-content class="content"
+      ><router-outlet></router-outlet
+    ></mat-drawer-content>
+  </mat-drawer-container>
+</div>

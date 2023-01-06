@@ -1,0 +1,27 @@
+
+// // :host{
+// //   height: 100%;
+// //   width: 100%;
+// // }
+
+// // .drawer-container{
+// //   display: grid;
+// //   grid-template-columns: 10fr 10fr;
+// // }
+.content{
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.nav {
+  display:inline-block;
+  width: 15vh;
+  height: 100vh;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #555;
+}
+.container{
+  min-height:100vh;
+}
