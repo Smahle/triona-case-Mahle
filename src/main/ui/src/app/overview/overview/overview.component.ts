@@ -1,6 +1,7 @@
 import { Component, EventEmitter, Input, OnChanges, OnInit } from '@angular/core';
 import { Subject, takeUntil } from 'rxjs';
 import { AppService } from 'src/app/data-api/app.service';
+import { SharedService } from 'src/app/shared-service/shared.service';
 import { UserInfoDto } from 'src/app/types/types';
 
 
@@ -27,21 +28,13 @@ export class OverviewComponent implements OnInit, OnChanges {
   numberOfLeapyears = 0;
   averageLengthOfFirstName = 0;
 
-  @Input() newUserAdded = new EventEmitter<void>();
-
-//   @Input() set newUserAdded(value: string) {
-//     this.newUserAdded = value;
-//     this.getAllUsers();
-//  }
-
   destroy$: Subject<boolean> = new Subject<boolean>();
 
-
-  constructor(private appService: AppService) {}
+  constructor(private appService: AppService, private sharedService: SharedService) {}
 
   ngOnInit() {
     this.getAllUsers();
-    this.newUserAdded.subscribe(()=>{
+    this.sharedService.changeEmitted$.subscribe(()=>{
       this.getAllUsers();
     })
   }
@@ -113,8 +106,6 @@ export class OverviewComponent implements OnInit, OnChanges {
   }
 
   ngOnChanges() {
-    console.log('overview.mopmonente')
-    console.log(this.newUserAdded)
     this.getAllUsers();
 }
   ngOnDestroy() {

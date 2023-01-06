@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomepageModule } from './homepage/homepage.module';
 import { OverviewModule } from './overview/overview/overview.module';
 import { PersonFormModule } from './person-form/person-form.module';
 
@@ -15,6 +16,7 @@ import { PersonFormModule } from './person-form/person-form.module';
     BrowserModule,
     AppRoutingModule,
     PersonFormModule,
+    HomepageModule,
     OverviewModule,
     HttpClientModule
   ],

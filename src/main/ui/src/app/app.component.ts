@@ -8,9 +8,4 @@ import { FormGroup } from '@angular/forms';
 })
 export class AppComponent {
   title = 'triona';
-  notifyChild =  new EventEmitter<void>();
-
-  newUser() {
-    this.notifyChild.next();
-  }
 }

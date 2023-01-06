@@ -6,6 +6,7 @@ import {
 } from '@angular/forms';
 import { Subject, takeUntil } from 'rxjs';
 import { AppService } from '../data-api/app.service';
+import { SharedService } from '../shared-service/shared.service';
 import { UserInfoDto } from '../types/types';
 
 @Component({
@@ -16,7 +17,6 @@ import { UserInfoDto } from '../types/types';
 export class PersonFormComponent implements OnInit{
   userCount = 0;
   destroy$: Subject<boolean> = new Subject<boolean>();
-  @Output() newItemEvent = new EventEmitter<void>();
 
     //TODO: add validators
   personForm = new FormGroup({
@@ -27,7 +27,7 @@ export class PersonFormComponent implements OnInit{
     phoneNumber: new FormControl(),
   });
 
-  constructor(private appService: AppService) {}
+  constructor(private appService: AppService, private sharedService: SharedService) {}
 
   ngOnInit(){
     this.getAllUsers();
@@ -39,7 +39,7 @@ export class PersonFormComponent implements OnInit{
       .addUser(this.personForm.value, this.userCount + 1)
       .pipe(takeUntil(this.destroy$))
       .subscribe((data) => {
-        this.newItemEvent.emit();
+        this.sharedService.emitChange();
         this.personForm.reset();
       });
   }
