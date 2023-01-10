@@ -8,6 +8,9 @@ import { HomepageModule } from './homepage/homepage.module';
 import { OverviewModule } from './overview/overview/overview.module';
 import { PersonFormModule } from './person-form/person-form.module';
 import { MatButtonModule } from '@angular/material/button';
+import {MatListModule} from '@angular/material/list';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { MatButtonModule } from '@angular/material/button';
     OverviewModule,
     HttpClientModule,
     MatSidenavModule,
-    MatButtonModule
+    MatButtonModule,
+    MatListModule,
+    MatToolbarModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

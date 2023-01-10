@@ -1,10 +1,43 @@
-  <mat-sidenav-container class="drawer-container">
-    <mat-sidenav class="nav" mode="side" opened >
-      <button class="nav-button" mat-raised-button color="primary" routerLink="">Hjem</button>
-      <button class="nav-button" mat-raised-button color="primary" routerLink="registrering">Lag ny bruker</button>
-      <button class="nav-button" mat-raised-button color="primary" routerLink="brukere">Oversikt over brukere</button>
-    </mat-sidenav>
-    <mat-sidenav-content  class="content"
-      ><router-outlet></router-outlet
-    ></mat-sidenav-content>
-  </mat-sidenav-container>
+<mat-toolbar>
+  <button
+    mat-icon-button
+    class="example-icon"
+    aria-label="Example icon-button with menu icon"
+  >
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>Tulle AS</span>
+  <span class="example-spacer"></span>
+  <button
+    mat-icon-button
+    class="example-icon favorite-icon"
+    aria-label="Example icon-button with heart icon"
+  >
+    <mat-icon>favorite</mat-icon>
+  </button>
+  <button
+    mat-icon-button
+    class="example-icon"
+    aria-label="Example icon-button with share icon"
+  >
+    <mat-icon>share</mat-icon>
+  </button>
+</mat-toolbar>
+<mat-sidenav-container class="drawer-container">
+  <mat-sidenav class="nav" mode="side" opened>
+    <mat-nav-list>
+      <mat-list-item>
+        <a class="nav-button" routerLink="">Hjem</a>
+      </mat-list-item>
+      <mat-list-item>
+        <a class="nav-button" routerLink="registrering">Lag ny bruker</a>
+      </mat-list-item>
+      <mat-list-item>
+        <a class="nav-button" routerLink="brukere">Oversikt over brukere</a>
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content class="content"
+    ><router-outlet></router-outlet
+  ></mat-sidenav-content>
+</mat-sidenav-container>
