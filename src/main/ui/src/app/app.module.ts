@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { HomepageModule } from './homepage/homepage.module';
 import { OverviewModule } from './overview/overview/overview.module';
 import { PersonFormModule } from './person-form/person-form.module';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { PersonFormModule } from './person-form/person-form.module';
     HomepageModule,
     OverviewModule,
     HttpClientModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
