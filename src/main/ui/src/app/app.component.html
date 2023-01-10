@@ -1,8 +1,9 @@
 <mat-toolbar>
   <button
     mat-icon-button
-    class="example-icon"
-    aria-label="Example icon-button with menu icon"
+    class="menu-icon"
+    aria-label="menu-option"
+    (click)="sidenav.toggle()"
   >
     <mat-icon>menu</mat-icon>
   </button>
@@ -24,7 +25,8 @@
   </button>
 </mat-toolbar>
 <mat-sidenav-container class="drawer-container">
-  <mat-sidenav class="nav" mode="side" opened>
+  <mat-sidenav #sidenav [(opened)]="opened" (opened)="events.push('open!')"
+  (closed)="events.push('close!')"class="nav" mode="side" opened>
     <mat-nav-list>
       <mat-list-item>
         <a class="nav-button" routerLink="">Hjem</a>

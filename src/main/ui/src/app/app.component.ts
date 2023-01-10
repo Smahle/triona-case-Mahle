@@ -1,5 +1,4 @@
 import { Component, EventEmitter } from '@angular/core';
-import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +6,7 @@ import { FormGroup } from '@angular/forms';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'triona';
+  title = 'tulle';
+  events: string[] = [];
+  opened: boolean = false;
 }
