@@ -1,25 +1,26 @@
 <mat-toolbar>
   <button
     mat-icon-button
-    class="menu-icon"
-    aria-label="menu-option"
+    class="icon-toolbar"
+    aria-label="Åpne sidemeny"
     (click)="sidenav.toggle()"
   >
     <mat-icon>menu</mat-icon>
   </button>
   <span>Tulle AS</span>
-  <span class="example-spacer"></span>
+  <span class="toolbar-spacer"></span>
   <button
     mat-icon-button
-    class="example-icon favorite-icon"
-    aria-label="Example icon-button with heart icon"
+    class="icon-toolbar"
+    aria-label="Logg på"
+    (click)="openDialog()"
   >
-    <mat-icon>favorite</mat-icon>
+    <mat-icon>login</mat-icon>
   </button>
   <button
     mat-icon-button
-    class="example-icon"
-    aria-label="Example icon-button with share icon"
+    class="icon-toolbar"
+    aria-label="Del siden"
   >
     <mat-icon>share</mat-icon>
   </button>

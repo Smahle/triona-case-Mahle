@@ -11,6 +11,8 @@ import { MatButtonModule } from '@angular/material/button';
 import {MatListModule} from '@angular/material/list';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
+import {MatDialogModule} from '@angular/material/dialog';
+import { LoginDialogModule } from './login-dialog/login-dialog.module';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { MatIconModule } from '@angular/material/icon';
     MatButtonModule,
     MatListModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    MatDialogModule,
+    LoginDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

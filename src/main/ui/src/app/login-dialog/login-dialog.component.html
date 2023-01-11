@@ -1,0 +1,23 @@
+<div class="dialog-container">
+<h1 mat-dialog-title>Logg inn</h1>
+<div mat-dialog-content class="dialog-content" [formGroup]="loginForm">
+    <mat-form-field appearance="fill">
+      <mat-label>Brukernavn</mat-label>
+      <input matInput formControlName="userName" />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Passord</mat-label>
+      <input matInput formControlName="password" />
+    </mat-form-field>
+
+  <p>Har du ikke bruker? <a routerLink="registrering" routerLinkActive="router-link-active" (click)="closeClick()">Lag ny bruker</a> </p>
+
+
+
+</div>
+<div mat-dialog-actions class="dialog-button">
+  <button mat-button (click)="closeClick()">Avbryt</button>
+  <button mat-button [mat-dialog-close]="loginForm" cdkFocusInitial>Ok</button>
+</div>
+</div>

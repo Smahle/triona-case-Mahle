@@ -6,3 +6,7 @@ export interface UserInfoDto {
   birthDate: Date;
   phoneNumber: number;
 }
+export interface LoginCredentials {
+  userName: string;
+  password: string;
+}
