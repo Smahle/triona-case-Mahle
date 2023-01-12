@@ -1,5 +1,7 @@
   <div class="scheme" style="padding-left: 10px" [formGroup]="personForm">
+    <div class="form-heading">
     <h1>Lag ny bruker</h1>
+  </div>
     <div>
       <mat-form-field appearance="fill">
         <mat-label>Fornavn</mat-label>
@@ -39,7 +41,7 @@
       </mat-form-field>
     </div>
 
-    <button (click)="onSendInformation()" type="submit" color="primary">
+    <button class="form-button" mat-raised-button (click)="onSendInformation()" type="submit" >
       Send
     </button>
   </div>

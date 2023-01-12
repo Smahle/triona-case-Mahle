@@ -1,4 +1,5 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { NONE_TYPE } from '@angular/compiler';
+import { Component, EventEmitter, OnInit, Output, ViewEncapsulation } from '@angular/core';
 import {
   Form,
   FormControl,

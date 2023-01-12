@@ -1,5 +1,5 @@
 .drawer-container {
-  min-height: 93vh;
+  min-height: calc(100vh - 63.99px);
   background-image: url("/../assets/bud.jpg");
 }
 .content {
@@ -49,4 +49,14 @@ mat-list-item{
 }
 .toolbar-container{
   background-color: var(--main);
+}
+.title-button{
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100px;
+  font-size: 30px;
 }
