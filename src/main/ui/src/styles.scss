@@ -3,14 +3,16 @@
 h1{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: 100;
-  color: #2272FF;
+  color: var(--secondary);
 }
 
 *{
   margin: 0;
   padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: var(--secondary)
 }
 :root {
-  --main: #3f51b5;
-  --secondary:
+  --main: #c5e5fa;
+  --secondary: #0b6c7a
 }

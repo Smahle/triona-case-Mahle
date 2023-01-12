@@ -15,7 +15,7 @@
   width: 200px;
   margin: 10px;
   border: 1px solid #555;
-  background-color: #424242;
+  background-color: #c5e5fa;
 }
 .nav-button {
   display: flex;
@@ -35,11 +35,11 @@ a:visited {
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 a:active {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 mat-list-item{
   padding:0px;
@@ -48,5 +48,5 @@ mat-list-item{
   flex: 1 1 auto;
 }
 .toolbar-container{
-  background-color: #2272FF;
+  background-color: var(--main);
 }
