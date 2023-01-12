@@ -3,3 +3,11 @@
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: #2272FF;
 }
+.homepage-container{
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+}
+.homepage-text{
+  display: flex;
+  align-items: center;
+}
