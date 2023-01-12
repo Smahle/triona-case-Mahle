@@ -8,12 +8,15 @@ import { ForcastService } from '../data-api/forcast.service';
 })
 export class HomepageComponent implements OnInit {
 
+  temp: number;
+
   constructor(private forcastService: ForcastService){
   }
 
   ngOnInit(){
     this.forcastService.LoadCurrentWeather().subscribe((data)=>{
       console.log(data);
+      this.temp=Math.trunc(data.main.temp);
     })
   }
 }
