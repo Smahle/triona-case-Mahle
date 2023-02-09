@@ -1,10 +1,12 @@
-.heading {
+.welcome {
   font-size: 90px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   color: var(--secondary);
-  display: flex;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
   justify-content: center;
+  background-color: var(--primary);
 }
 .homepage-container {
   height: 100vh;
@@ -16,25 +18,21 @@
   flex-direction: column;
   align-items: center;
   justify-self: center;
+  background-color: var(--tertiary);
 }
 .wheater-forcast {
   font-size: 150px;
   color: var(--secondary);
+  background-color: var(--quaternary);
 }
 .celcius {
   color: var(--secondary);
 }
 section {
   height: 100vh;
-  width: 100vh;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
   scroll-snap-align: start;
-}
-.heading {
-  background-color: black;
-}
-.homepage-text {
-  background-color: blue;
 }

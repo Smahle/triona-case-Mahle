@@ -4,7 +4,6 @@
 .content {
   display: flex;
   height: 100%;
-  width: 100%;
   align-items: center;
   justify-content: center;
   overflow: hidden;
@@ -16,7 +15,7 @@
   width: 200px;
   margin: 10px;
   border: 1px solid #555;
-  background-color: #c5e5fa;
+  background-color: var(--quaternary);
 }
 .nav-button {
   display: flex;
@@ -49,7 +48,7 @@ mat-list-item{
   flex: 1 1 auto;
 }
 .toolbar-container{
-  background-color: var(--main);
+  background-color: var(--quaternary);
 }
 .title-button{
   border: none;
