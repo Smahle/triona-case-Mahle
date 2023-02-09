@@ -1,9 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
 @import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
 h1{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-weight: 100;
-  color: var(--secondary);
+  font-family: 'Roboto Condensed', sans-serif;
+  color: var(--quaternary);
+  font-size: 90px;
+
+}
+h2{
+  font-family: 'Roboto Condensed', sans-serif;
+  color: var(--quaternary);
+  font-size: 50px;
 }
 
 *{

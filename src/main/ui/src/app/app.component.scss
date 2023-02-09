@@ -44,12 +44,13 @@ a:active {
 mat-list-item{
   padding:0px;
 }
-.toolbar-spacer {
+.toolbar-picture {
   flex: 1 1 auto;
 }
-.toolbar-container{
-  background-color: var(--quaternary);
-}
+// .toolbar-container{
+//   background-color: var(--quaternary);
+//   background-size: cover;
+// }
 .title-button{
   border: none;
   background: none;
