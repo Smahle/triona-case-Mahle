@@ -9,6 +9,7 @@ import { ForcastService } from '../data-api/forcast.service';
 export class HomepageComponent implements OnInit {
 
   temp: number;
+  weatherUrl: string;
 
   constructor(private forcastService: ForcastService){
   }
@@ -17,6 +18,7 @@ export class HomepageComponent implements OnInit {
     this.forcastService.LoadCurrentWeather().subscribe((data)=>{
       console.log(data);
       this.temp=Math.trunc(data.main.temp);
+      this.weatherUrl = "/../assets/"+data.weather[0].icon.slice(0,2)+".svg";
     })
   }
 }

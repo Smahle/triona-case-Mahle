@@ -19,9 +19,13 @@
   background-color: var(--tertiary);
 }
 .wheater-forcast {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
   font-size: 80px;
   color: var(--secondary);
   background-color: var(--quaternary);
+
 }
 .celcius {
   color: var(--secondary);
