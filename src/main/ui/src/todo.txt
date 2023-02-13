@@ -4,3 +4,4 @@ animerte vær icon
 
 flere sider
 
+bedre scroll animation?

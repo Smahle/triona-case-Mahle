@@ -6,8 +6,8 @@
   </section>
 
   <section class="homepage-text">
-    <p>Dette er en enkel nettside jeg utvikler for tiden for å vise noe av det jeg kan.</p>
-    <ul>
+    <h3>Dette er en enkel nettside jeg utvikler for tiden for å vise noe av det jeg kan.</h3>
+    <ul class="text-list">
       <li>Du kan trykke på meny-ikonet oppe til venstre og få tre valg.</li>
       <li>Du lage brukere og se en oversikt over dem. Disse blir lagret på backend og hentet med api-kall.</li>
       <li>Du kan og trykke på login oppe til høyre. Dette var for å vise dialoger.</li>
@@ -17,9 +17,8 @@
   </section>
 
 <section class="wheater-forcast">
-  <div>Temperaturen i Bud er nå
+  <div class="weather-text">Temperaturen i Bud er nå
   {{temp}}<span class="celcius">&#8451;</span></div>
-  <img src={{weatherUrl}} alt="Italian Trulli" width=600px
-  height=auto>
+  <div class="weather-icon"><img src={{weatherUrl}} alt="Italian Trulli" width=600px height=auto> </div>
 </section>
 </div>

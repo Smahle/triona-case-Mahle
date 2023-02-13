@@ -9,23 +9,45 @@
 .homepage-container {
   height: 100vh;
   scroll-snap-type: y mandatory;
+  transition: all 5s ease;
   overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 .homepage-text {
   display: grid;
+  color: var(--tertiary);
   flex-direction: column;
+  grid-template-rows: 1fr 1fr;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   align-items: center;
   justify-self: center;
-  background-color: var(--tertiary);
+  background-image: url("/../assets/second.jpg");
+  background-size: cover;
+}
+.text-headline{
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+.text-list{
+  align-self: start;
+  font-size: 20px;
 }
 .wheater-forcast {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 130px 1fr 1fr;
   justify-items: center;
   font-size: 80px;
   color: var(--secondary);
   background-color: var(--quaternary);
-
+}
+.weather-text{
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+.weather-icon{
+  grid-row-start: 3;
+  grid-row-end: 3;
 }
 .celcius {
   color: var(--secondary);
